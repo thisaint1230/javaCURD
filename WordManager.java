@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class WordManager {
-    Scanner s =
+    Scanner menuNum = new Scanner(System.in);
     public int Menu() {
     System.out.print("   *** 영단어 마스터 *** \n "
     + " ******************** \n "
@@ -14,8 +14,8 @@ public class WordManager {
     + " 7. 파일 저장 \n "
     + " 0. 나가기 \n "
     + " ******************** \n "
-    + " => 원하는 메뉴는? \n "
+    + " => 원하는 메뉴는? "
     );
-    return m;
+       return menuNum.nextInt();
     }
 }
