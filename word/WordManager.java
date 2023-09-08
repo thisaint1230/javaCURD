@@ -1,3 +1,5 @@
+package word;
+
 import java.util.Scanner;
 
 public class WordManager {
