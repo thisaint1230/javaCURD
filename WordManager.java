@@ -18,4 +18,6 @@ public class WordManager {
     );
        return menuNum.nextInt();
     }
+
+
 }
