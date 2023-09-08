@@ -21,5 +21,14 @@ public class WordManager {
        return menuNum.nextInt();
     }
 
+    public void ShowList (){
+
+    }
+    public void ShowLevelList(){}
+    public void SearchWord(){}
+    public void AddWord(){}
+    public void ModifyWord(){}
+    public void DeleteWord(){}
+
 
 }
