@@ -63,7 +63,30 @@ public class WordManager {
         }
         System.out.println("--------------------------------------");
     }
-    public void ShowLevelList(){}
+    public void ShowLevelList(){
+        System.out.println("=> 레벨을 입력하세요! ( 1 2 3 ) ");
+        int level = scanner.nextInt();
+        while(!((1<=level)&&(level<=3))){
+            System.out.println("잘못 입력하셨습니다 다시 입력하세요 !");
+            level = scanner.nextInt();
+        };
+
+        System.out.println("--------------------------------------");
+
+        if(wordCURD.list.isEmpty()){
+            System.out.println("아직 단어가 없습니다. 추가해 주세요");
+        }
+        else {
+            for (int i = 0; i < wordCURD.list.size(); i++) {
+                if (level == wordCURD.list.get(i).getLevel()) {
+                    System.out.println((i + 1) + "\t" + wordCURD.list.get(i).toString());
+                }
+            }
+        }
+        System.out.println("--------------------------------------");
+        System.out.println("=> 완료!");
+
+    }
 
 
 }
