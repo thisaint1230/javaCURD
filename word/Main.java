@@ -1,12 +1,13 @@
 package word;
 
-import word.WordManager;
-
-import java.util.Scanner;
+import word.WordProgram;
 
 public class Main {
     public static void main(String[] args) {
-        new WordManager().program();
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println("OS name : " + osName);
+
+        new WordProgram().program();
     }
 }
 

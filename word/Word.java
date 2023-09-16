@@ -13,6 +13,7 @@ public class Word {
         this.korean = korean;
     }
 
+
     public int getId() {
         return id;
     }
@@ -57,4 +58,8 @@ public class Word {
                         +String.format("\t%15s ",korean);
         return string;
     }
+    public String dataWrite(){
+        return level+"|"+english+"|"+korean+"\n";
+    }
+
 }

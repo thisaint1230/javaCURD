@@ -1,26 +1,24 @@
 package word;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.net.SocketOption;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class WordCURD implements Interface {
+public class WordFile implements Interface {
     ArrayList<Word> list;
     Scanner scanner;
-    WordCURD(Scanner scanner) {
+
+    WordFile() {
         list = new ArrayList<>();
         this.scanner = scanner;
     }
 
-    public void SaveFile(){
+    public void saveFile(){
         try{
             FileOutputStream file = new FileOutputStream("WordMaster.txt");
-            String s = "aaaaaaa" ;
-            file.write(s.getBytes());
+            for (int i=0; i< list.size(); i++) {
+                file.write(list.get(i).dataWrite().getBytes());
+            }
             file.close();
 
         } catch (FileNotFoundException e) {
@@ -31,23 +29,32 @@ public class WordCURD implements Interface {
          }
     }
 
-    public void LoadFile(){
+    public void loadFile(){
         try{
-            FileOutputStream file = new FileOutputStream("WordMaster.txt");
-            String s = "aaaaaaa" ;
-            file.write(s.getBytes());
-            file.close();
+            BufferedReader bufferedReader = new BufferedReader( new FileReader("WordMaster.txt"));
+            String line;
+            int i=0;
+            while (true){
+                line = bufferedReader.readLine();
+                if(line == null) break;
+                String[] data = line.split("\\|");
+                try {
+                    list.add(new Word(0,Integer.parseInt(data[0]),data[1],data[2]));
+                }
+                catch (NumberFormatException e){}
 
-        } catch (FileNotFoundException e) {
+                i++;
+            }
+
+            bufferedReader.close();
+            System.out.println("=>"+i+"개 불러옴!");
+        }
+        catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         catch (IOException e){
             e.printStackTrace();
         }
-    }
-
-    public void AddWord(){
-
     }
 
     @Override
@@ -72,6 +79,7 @@ public class WordCURD implements Interface {
 
     }
 
+
     @Override
     public void Delete() {
 
@@ -83,6 +91,7 @@ public class WordCURD implements Interface {
         list.add(word);
         System.out.println("=> 단어 추가 완료!");
     }
+
 
 
 }
