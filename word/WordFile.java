@@ -20,6 +20,7 @@ public class WordFile implements Interface {
                 file.write(list.get(i).dataWrite().getBytes());
             }
             file.close();
+            System.out.println("=> 파일 추가 완료 !");
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
