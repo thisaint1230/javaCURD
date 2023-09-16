@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class WordFile implements Interface {
     ArrayList<Word> list;
-    Scanner scanner;
+    Scanner scanner = new Scanner(System.in);
 
     WordFile() {
         list = new ArrayList<>();
