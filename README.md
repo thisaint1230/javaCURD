@@ -18,3 +18,14 @@
 ## 단어 삭제 화면
 <img width="414" alt="스크린샷 2023-09-16 오후 9 39 20" src="https://github.com/thisaint1230/javaCURD/assets/130739807/f8003781-84f3-45c7-b59e-adb2c44887e3">
 
+## 수준별 단어보기 화면
+<img width="485" alt="스크린샷 2023-09-16 오후 9 50 36" src="https://github.com/thisaint1230/javaCURD/assets/130739807/41d1e0b1-941f-46f8-a47c-a110e777e383">
+
+## 단어 검색 화면 
+<img width="395" alt="스크린샷 2023-09-16 오후 9 52 08" src="https://github.com/thisaint1230/javaCURD/assets/130739807/baa45eb8-980d-402a-80d4-4653b03dec70">
+
+## 불러오기 화면 
+<img width="241" alt="스크린샷 2023-09-16 오후 9 58 57" src="https://github.com/thisaint1230/javaCURD/assets/130739807/37d9cc55-fd21-4bc0-acdc-7627d2b16c40">
+
+
+
