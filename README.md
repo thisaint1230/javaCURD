@@ -10,3 +10,11 @@
 
 ## 종료화면 
 <img width="278" alt="스크린샷 2023-09-08 오후 10 59 36" src="https://github.com/thisaint1230/javaCURD/assets/130739807/6b509662-40c3-4fcf-862b-f1eed2c79a81">
+
+## 단어 수정 화면 
+<img width="377" alt="스크린샷 2023-09-16 오후 9 37 13" src="https://github.com/thisaint1230/javaCURD/assets/130739807/d36d85be-d0b4-469c-8e0f-5d0a04d47605">
+<img width="410" alt="스크린샷 2023-09-16 오후 9 37 56" src="https://github.com/thisaint1230/javaCURD/assets/130739807/2c40231d-10b0-4c68-9f83-2f69224bef16">
+
+## 단어 삭제 화면
+<img width="414" alt="스크린샷 2023-09-16 오후 9 39 20" src="https://github.com/thisaint1230/javaCURD/assets/130739807/f8003781-84f3-45c7-b59e-adb2c44887e3">
+
